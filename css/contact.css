@@ -64,43 +64,10 @@ body, html {
     margin: 0 auto; 
 }
 
-
-.about-content {
+.contact-content {
     margin-left: 20%;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     background-color: #f7f9fc; 
-}
-
-.about-text, .info-cards {
-    width: 50%;
-    padding: 20px;
-}
-
-
-.info-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-}
-
-.card {
-    background-color: #fff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.card .icon {
-    margin-right: 10px; 
-}
-
-.card .title {
-    font-weight: bold;
-}
-
-.card .value {
-    margin-left: auto;
 }
