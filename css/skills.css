@@ -68,6 +68,36 @@ body, html {
     margin-left: 20%;
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* 스킬 카테고리를 위한 컬럼 레이아웃 */
     background-color: #f7f9fc; 
 }
+
+.skill-category h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.skill img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill span {
+    text-align: center;
+}
+
