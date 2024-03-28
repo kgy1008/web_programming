@@ -70,7 +70,9 @@ body, html {
     display: flex; 
     flex-wrap: wrap; 
     background-color: #f7f9fc; 
-    align-items: flex-start; 
+    align-items: center;
+    justify-content: center; 
+    padding: 40px 0;
 }
 
 .contact-container-left,
@@ -89,6 +91,7 @@ body, html {
     display: flex; 
     flex-direction: column; 
     align-items: center;
+    margin-left: 100px;
 }
 
 .contact-container-left h2,
