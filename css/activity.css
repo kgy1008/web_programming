@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.menu {
+    width: 20%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.menu ul {
+    list-style: none; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 0; 
+    margin: 15px 0; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #000; 
+    font-weight: bold; 
+}
+
+.menu a:hover {
+    color: rgb(206, 182, 233); 
+    background-color: transparent; 
+}
+
+.menu a.active{
+    color: rgb(194, 141, 255); 
+    background-color: transparent; 
+}
+
+.profile-pic {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 90px;
+}
+
+.profile-pic img {
+    max-width: 70%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+.activity-content {
+    margin-left: 20%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f9fc; 
+}
