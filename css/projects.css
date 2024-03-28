@@ -68,6 +68,63 @@ body, html {
     margin-left: 20%;
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
     background-color: #f7f9fc; 
+    padding-top: 20px; 
 }
+
+.project-content > h1 {
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 50px; 
+    margin-top: 50px;
+}
+
+.flip-outer {
+    width: 400px;
+    height: 400px;
+}
+  
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+  
+.front {
+    width: 100%;
+    position: absolute;
+    z-index : 1;  
+}
+  
+.back {
+    width: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+} 
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 1s;
+    transform-style: preserve-3d;
+}
+  
+.flip-inner:hover {
+    transform: rotateY(180deg);
+} 
+
+.front {
+    backface-visibility: hidden;
+} 
