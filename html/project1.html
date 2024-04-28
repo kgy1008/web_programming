@@ -2,10 +2,57 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project1_details</title>
-    
 </head>
 <body>
-   
+    <div class="container">
+        <div class="project-image">
+            <div class="image-container">
+                <img src="../img/project1.png">
+            </div>
+            <div class="image-container">
+                <img src="../img/project1_detail.png">
+            </div>
+            <div class="image-container">
+                <img src="../img/project1_home.png">
+            </div>
+        </div>
+        <div class="description">
+            <h2>Backend</h2>
+            <ul>
+              <li>
+                <p>Node.js, Express.js, MongoDB</p>
+                <ul>
+                  <li>로그인 기능 구현
+                    <ul>
+                      <li>패스워드와 같은 중요 정보는 Hash 함수를 이용하여 암호화하여 DB에 저장하도록 구현</li>
+                    </ul>
+                  </li>
+                  <li>이미지 파일 저장
+                    <ul>
+                      <li>base64로 인코딩된 이미지를 Buffer.from()을 사용하여 Buffer로 변환하고 이를 파일로 저장하는 방식으로 구현
+                        <ul>
+                          <li>그 후, 해당 파일의 경로를 생성하고 해당 파일을 URL로 변환하여 DB에 저장하였음</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>자동 요약 서비스 구현 시도
+                    <ul>
+                      <li>사용자가 프로젝트 설명란에 아무것도 입력하지 않았을 경우, README.md 파일을 불러와 자동으로 요약을 제공하려 함</li>
+                      <li>githubAPI를 이용하여 github 링크의 README.md 파일을 불러오는 방식으로 구현하려고 시도함</li>
+                      <li>Naver Clova API를 이용한 내용 자동 요약 구현 시도
+                        <ul>
+                          <li>그러나 Clova API의 한계로 인해 Readme.md의 문맥을 정확히 파악하지 못하는 문제가 발생</li>
+                          <li>이 문제에 대한 해결책을 모색 중임</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    </div>
 </body>
-</html>

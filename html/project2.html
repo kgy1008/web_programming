@@ -2,10 +2,45 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project2_details</title>
-    
 </head>
 <body>
-   
+    <div class="container">
+        <div class="project-image">
+            <div class="image-container">
+                <img src="../img/project2.png">
+            </div>
+            <div class="image-container">
+                <img src="../img/project2_datail.png">
+            </div>
+            <div class="image-container">
+                <img src="../img/project2_home.png">
+            </div>
+        </div>
+        <div class="description">
+            <h2>Description</h2>
+            <ul>
+                <p>길을 걷다 쓰레기를 처리해야할 때, 공공쓰레기통의 위치를 몰라 불편함을 겪었던 경험을 해결하고자 전체 서울시 공공쓰레기통의 위치를 알려주고 나와 가장 가까운 거리에 위치한 쓰레기통의 경우, 특별한 이미지 마커로 부각시켜 보여줌. 또한 각 구 별 쓰레기통의 개수를 가시적으로 나타내어 차후 쓰레기통이 부족한 구를 파악하고 추가 설치를 장려하는 등, 공익적인 목적까지 고려하여 제작한 서비스 </p>
+                <ul>
+                  <li>csv 파일 통합
+                    <ul>
+                      <li>서울 열린 데이터광장에서 찾을 수 있는 서울시 가로 쓰레기통 설치 현황 파일에는 개별적으로 공개되어 있는 구들의 데이터들을 하나의 csv 파일로 통합하고 불필요하거나 중복된 정보들은 제거하는 과정을 거침</li>
+                    </ul>
+                  </li>
+                  <li>쓰레기통 주소 파싱
+                    <ul>
+                      <li>쓰레기통의 위치를 지도에 띄우기 위해, Google Maps API를 이용하여 주소를 좌표값으로 변환하였음
+                      </li>
+                    </ul>
+                  </li>
+                  <li>실시간 나의 위치 정보 불러오기
+                    <ul>
+                      <li>Google Maps API에 내장되어 있는 getCurrentPosition().coords 메소드를 사용하여 현재 나의 위치의 위도와 경도를 반환함</li>
+                    </ul>
+                  </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
 </body>
-</html>

@@ -101,3 +101,40 @@ body, html {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .menu {
+      width: 100%;
+      position: fixed; 
+      top: 0; 
+      z-index: 1000; 
+    }
+  
+    .menu ul {
+      flex-direction: row;
+      justify-content: center; 
+      padding-left: 0;
+      margin-left: 0;
+    }
+  
+    .menu li {
+      margin: 0;
+      padding: 10px;
+    }
+  
+    .content {
+      width: 100%;
+      margin-top: 60px; 
+    }
+  
+    .profile-pic img {
+      width: 50px; 
+      height: 50px;
+      margin-top: 20px;
+    }
+  
+    .profile-pic {
+      display: none; 
+    }
+  
+}
+
