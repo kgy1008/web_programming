@@ -76,7 +76,6 @@ body, html {
     justify-content: center; 
     align-items: center; 
     background-color: #f7f9fc;
-    min-height: 400px; 
 }
 
 .contact-container-left, .contact-container-right {
