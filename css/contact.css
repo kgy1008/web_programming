@@ -56,17 +56,15 @@ body, html {
 .profile-pic {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 10px 0;
-    margin-bottom: 90px;
+    padding: 20px 0;
+    margin-bottom: 50px;
 }
 
 .profile-pic img {
     max-width: 70%; 
     height: auto;
-    display: block;
-    margin: 0 auto; 
 }
 
 .contact-content {
