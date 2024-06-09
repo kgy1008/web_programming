@@ -25,3 +25,4 @@ document.addEventListener('DOMContentLoaded', function() {
         typeAnimation(personalInfoElement, personalInfoText, 100); // Speed of typing the personal info text
     }, introText.length * 100); // Delay the start based on the length of the intro text
 });
+
