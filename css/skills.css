@@ -76,7 +76,7 @@ body, html {
 .tech-stack {
     width: 80%;
     border-radius: 8px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .category {
@@ -149,6 +149,6 @@ body, html {
     color: #dadada;
 }
 
-.dark-mode .skills-content h2 {
+.dark-mode .skills-content h1 {
     color: #ffcc00;
 }

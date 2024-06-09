@@ -130,6 +130,10 @@ body, html {
     }
 }
 
+.dark-mode .heading {
+    color: #ffcc00;
+}
+
 .dark-mode .activity-content {
     background-color: #2e2e2e;
 }
