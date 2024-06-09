@@ -81,7 +81,6 @@ body, html {
     text-align: center; 
 }
 
-
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -113,4 +112,9 @@ body, html {
     .profile-pic {
         display: none; 
     }
+}
+
+.dark-mode .content {
+    background-color: #2e2e2e;
+    color: #f1f1f1;
 }

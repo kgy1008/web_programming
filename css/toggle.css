@@ -1,0 +1,123 @@
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+.dark-mode .menu a {
+    color: #f1f1f1;
+}
+
+.dark-mode .menu a.active {
+    color: #ffcc00;
+}
+
+.dark-mode .menu a:hover {
+    color: #ffcc00;
+}
+
+.toggle-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-container input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-label::after {
+    content: '☀️';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #f39c12;
+    transition: opacity 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .toggle-label {
+    background-color: #4A4A4A;
+}
+
+input[type="checkbox"]:checked + .toggle-label::before {
+    transform: translate(30px, -50%);
+}
+
+input[type="checkbox"]:checked + .toggle-label::after {
+    content: '🌙';
+    left: auto;
+    right: 5px;
+    color: #f1c40f;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-bar {
+        width: 100%;
+        position: relative;
+        background-color: #fff; 
+    }
+
+    .menu ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu li {
+        padding: 5px 10px;
+    }
+
+    .about-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        display: none; 
+    }
+
+    .toggle-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dark-mode .menu-bar {
+        background-color: #1e1e1e;
+    }
+}

@@ -77,6 +77,22 @@ body, html {
     font-size: 24px;
 }
 
+.animated-text {
+    display: inline-block;
+}
+
+.letter {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+.letter.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .info-cards {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +105,7 @@ body, html {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         width: 100%;
@@ -98,7 +114,6 @@ body, html {
     .menu-bar {
         width: 100%;
         position: relative;
-        background-color: #fff; 
     }
 
     .menu ul {
@@ -116,12 +131,11 @@ body, html {
         padding: 10px;
     }
 
-    .info-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .profile-pic {
         display: none; 
     }
+}
+
+.dark-mode .about-content {
+    background-color: #2e2e2e;
 }

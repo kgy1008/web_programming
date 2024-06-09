@@ -150,3 +150,7 @@ button:hover {
         display: none; 
     }
 }
+
+.dark-mode .contact-content {
+    background-color: #2e2e2e;
+}

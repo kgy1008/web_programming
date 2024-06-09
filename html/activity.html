@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Activity</title>
     <link href="../css/activity.css" rel="stylesheet">
+    <link href="../css/toggle.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -21,11 +22,15 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="toggle-container">
+                    <input type="checkbox" id="toggle-dark-mode">
+                    <label for="toggle-dark-mode" class="toggle-label"></label>
+                </div>
             </nav>
         </div>
         <div class="activity-content">
             <div class="page one">
-                <h2 class="heading" style="color: rgb(36, 36, 103);">Activities</h2>
+                <h2 class="heading">Activities</h2>
                 <div class="resume-wrap">
                     <div class="icon">
                         <span class="flaticon-ideas"></span>
@@ -95,5 +100,6 @@
             </div>
         </div>
     </div>
+    <script src="../javascript/toggle.js"></script>
 </body>
 </html>
