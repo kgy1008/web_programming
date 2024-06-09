@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
+    background-color: #f7f9fc;
 }
 
 .container {
@@ -16,7 +17,7 @@ body, html {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: transparent;
+    background-color: #fff;
 }
 
 .menu {
@@ -148,6 +149,10 @@ button:hover {
 
     .profile-pic {
         display: none; 
+    }
+
+    .toggle-container {
+        display: none !important;
     }
 }
 

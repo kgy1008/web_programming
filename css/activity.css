@@ -16,7 +16,7 @@ body, html {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: transparent;
+    background-color: #fff;
 }
 
 .menu {
@@ -123,6 +123,10 @@ body, html {
 
     .profile-pic {
         display: none; 
+    }
+
+    .toggle-container {
+        display: none !important;
     }
 }
 
