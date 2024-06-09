@@ -70,25 +70,33 @@ body, html {
 .skills-content {
     margin-left: 20%;
     width: 80%;
-    padding: 20px;
-    background-color: #f7f9fc;
+    padding: 30px;
 }
 
-.skill-category {
+.tech-stack {
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+.category {
+    margin-bottom: 70px;
+}
+
+.category h3 {
+    color: #333;
     margin-bottom: 20px;
 }
 
-.skill-set {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
+.items span {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 4px;
 }
 
-.skill {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 
 @media (max-width: 768px) {
     .container {
@@ -116,11 +124,6 @@ body, html {
         padding: 10px;
     }
 
-    .skill-set {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .profile-pic {
         display: none; 
     }
@@ -130,11 +133,22 @@ body, html {
     }
 }
 
-.dark-mode .skills-content {
+.dark-mode body, html {
     background-color: #2e2e2e;
-    color: #f1f1f1;
 }
 
 .dark-mode .menu-bar {
     background-color: rgb(38, 38, 38);
+}
+
+.dark-mode .items span {
+    color: #333;
+}
+
+.dark-mode .category h3 {
+    color: #dadada;
+}
+
+.dark-mode .skills-content h2 {
+    color: #ffcc00;
 }

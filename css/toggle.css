@@ -1,5 +1,12 @@
-.dark-mode {
-    background-color: #1e1e1e;
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dark-mode{
+    background-color: #2e2e2e;
     color: #f1f1f1;
 }
 
@@ -13,6 +20,10 @@
 
 .dark-mode .menu a:hover {
     color: #ffcc00;
+}
+
+.dark-mode .menu-bar {
+    background-color: rgb(38, 38, 38);
 }
 
 .toggle-container {

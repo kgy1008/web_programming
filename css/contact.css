@@ -158,6 +158,10 @@ button:hover {
     background-color: #2e2e2e;
 }
 
+.dark-mode .body, html{
+    background-color: #2e2e2e;
+}
+
 .dark-mode .menu-bar {
     background-color: rgb(38, 38, 38);
 }
