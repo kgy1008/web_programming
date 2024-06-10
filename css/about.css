@@ -124,6 +124,11 @@ body, html {
     color: #1a73e8; 
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

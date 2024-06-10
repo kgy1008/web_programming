@@ -113,6 +113,11 @@ button:hover {
     background-color: #45a049;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 
 @media screen and (max-width: 768px) {
     .container {

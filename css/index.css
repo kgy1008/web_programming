@@ -29,7 +29,6 @@ body, html {
     animation: fadeIn 2s ease-in-out;
 }
 
-
 @media screen and (max-width: 768px) {
     .content {
         padding: 10px;
