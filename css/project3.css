@@ -15,6 +15,23 @@ body, html {
     align-items: center; 
 }
 
+.home-button {
+    position: absolute; 
+    top: 20px;
+    left: 20px; 
+    z-index: 1000; 
+}
+
+.home-button a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+}
+
 .description {
     background-color: #ffffff;
     padding: 20px;

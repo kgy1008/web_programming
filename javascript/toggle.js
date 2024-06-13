@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+
     const toggleDarkMode = document.getElementById('toggle-dark-mode');
     
     if (localStorage.getItem('dark-mode') === 'enabled') {
