@@ -6,11 +6,13 @@ body, html {
 }
 
 .container {
+    width: 80%;
     height: 100%;
     margin: auto;
     padding: 20px;
     display: flex; 
     justify-content: center;  
+    align-items: center; 
 }
 
 
