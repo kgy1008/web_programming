@@ -2,17 +2,15 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #f7f9fc;
+    overflow: hidden;
 }
 
 .container {
-    width: 80%;
-    height: 100vh; 
+    height: 100%;
     margin: auto;
     padding: 20px;
     display: flex; 
     justify-content: center;  
-    align-items: center; 
-    overflow: hidden;
 }
 
 
@@ -43,4 +41,17 @@ body, html {
 
 .features li {
     padding: 5px 0;
+}
+
+.dark-mode .body, html{
+    background-color: #2e2e2e;
+}
+
+.dark-mode, .dark-mode .description {
+    background-color: #1c1c1c;
+    color: #c2c2c2;
+}
+
+.dark-mode h2, .dark-mode h3 {
+    color: #ffffff;
 }

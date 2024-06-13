@@ -2,17 +2,16 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #f7f9fc;
+    overflow: hidden;
 }
 
 .container {
-    width: 80%;
-    height: 100vh; 
+    height: 100%;
     margin: auto;
     padding: 20px;
     display: flex; 
     justify-content: center;  
     align-items: center; 
-    overflow: hidden;
 }
 
 .description {
@@ -20,6 +19,10 @@ body, html {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 5px;
+}
+
+.dark-mode .body, html{
+    background-color: #2e2e2e;
 }
 
 .description h2 {
@@ -48,3 +51,18 @@ body, html {
     font-size: 0.95em;
     color: #555;
 }
+
+.dark-mode, .dark-mode .description {
+    background-color: #1c1c1c;
+    color: #c2c2c2;
+}
+
+.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .container .description ul li {
+    color: rgba(229, 229, 229, 0.9);
+}
+
+

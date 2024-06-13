@@ -2,39 +2,55 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #f7f9fc;
+    overflow: hidden;
 }
 
 .container {
     width: 80%;
-    height: 100vh; 
+    height: 100%;
     margin: auto;
     padding: 20px;
     display: flex; 
     justify-content: center;  
     align-items: center; 
-    overflow: hidden;
 }
 
 .description {
     background-color: #ffffff;
     padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .description h2 {
-    color: #333;
+    color: #2a2a2a;
+    margin-bottom: 16px;
 }
 
-.description ul {
-    list-style: none;
-    padding: 0;
+.description p {
+    line-height: 1.6;
 }
 
-.description li {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
+.feature h3 {
+    color: #444;
+    margin-top: 10px;
 }
 
-.description li:last-child {
-    border-bottom: none;
+.feature p {
+    margin-bottom: 10px;
+    text-indent: 20px;
 }
+
+.dark-mode .body, html{
+    background-color: #2e2e2e;
+}
+
+.dark-mode, .dark-mode .description {
+    background-color: #1c1c1c;
+    color: #c2c2c2;
+}
+
+.dark-mode h2, .dark-mode h3 {
+    color: #ffffff;
+}
+
