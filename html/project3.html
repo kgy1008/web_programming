@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project3_details</title>
+    <title>Project3 Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="../css/project3.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="project-image">
-            <div class="image-container">
-                <img src="../img/project3.png">
-            </div>
-            <div class="image-container">
-                <img src="../img/project3_detail.png">
-            </div>
+        <div class="description">
+            <h2>Description</h2>
+            <p>ADHD (Anomaly Detection with Human Data) 프로젝트는 최근 급증하는 무인점포 범죄 등을 해결하고자, Movenet + LSTM으로 AI 모델을 학습시켜 CCTV(웹캠) 등에서 실시간으로 Humanpose를 추출하여 폭행 등의 이상 상황을 탐지할 수 있도록 한 AI 프로젝트입니다.</p>
+            <ul>
+                <li>Data collection & processing
+                    <ul>
+                        <li>폭행 상황 영상(abnormal)과 정상 상황(normal)을 다양한 viewpoint에서 자체적으로 촬영 후(100 sec), 3 fps로 이미지를 나눔 (총 frame 수 = 600)</li>
+                    </ul>
+                </li>
+                <li>Data augmentation
+                    <ul>
+                        <li>기존에 augmentation없이 model을 학습했을 땐 특정 좌표에서 pose estimation 시 prediction이 되는 문제가 있었는데, data augmentation을 통해 x 좌표를 flip해서 학습을 진행했더니 상대적으로 훨씬 detection을 잘 수행하였음.</li>
+                    </ul>
+                </li>
+                <li>Pose estimation
+                    <ul>
+                        <li>posenet, mediapipe 등의 pose estimation model이 있었지만 최근 Google research에서 성능과 속도면에서 큰 향상을 보인 movenet을 사용하기로 결정. Frame 별로 Human pose를 17개의 (x, y, score) shape를 가지는 Keypoints로 나눠 이를 LSTM model에 넣어 학습함.</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="description">
-        <h2>Description</h2>
-        <ul>
-            <p>ADHD (Anomaly Detection with Human Data) 프로젝트는 최근 급증하는 무인점포 범죄 등을 해결하고자, Movenet + LSTM으로 AI model을 학습시켜 CCTV(웹캠) 등에서 realtime으로 Humanpose를 추출하여 폭행 등의 이상 상황을 탐지할 수 있도록 한 AI 프로젝트입니다.</p>
-        </ul>
-    </div>
 </body>
+</html>

@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+}
+
+.container {
+    width: 80%;
+    height: 100vh; 
+    margin: auto;
+    padding: 20px;
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
+    overflow: hidden;
+}
+
+.description {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.description h2 {
+    color: #333;
+}
+
+.description p {
+    margin-top: 0;
+}
+
+.description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.description li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.description li:last-child {
+    border-bottom: none;
+}
+
+.description li ul li {
+    font-size: 0.95em;
+    color: #555;
+}

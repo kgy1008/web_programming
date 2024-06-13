@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+}
+
+.container {
+    width: 80%;
+    height: 100vh; 
+    margin: auto;
+    padding: 20px;
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
+    overflow: hidden;
+}
+
+
+.description {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.description h2, .description h3 {
+    color: #2a2a2a;
+}
+
+.description p, .description li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.features li {
+    padding: 5px 0;
+}
